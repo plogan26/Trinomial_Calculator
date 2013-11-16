@@ -1,0 +1,51 @@
+<html>
+
+<head>
+
+    <link rel="stylesheet" type="text/css" href="qCalcStyle.css">
+    <script src="qCalcScript.js"></script>	
+    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+    
+</head>
+
+
+<body onload="loadUp()">
+
+	
+	<div id='numOneTitle' class='titleText'>Coefficient (<b><u>2</b></u>x^2 - 5x - 12)</div>
+	<input type="text" id='numberOne' class='inputBoxes'>
+	
+	<div id='numTwoTitle' class='titleText'>Constant (2x^2 - 5x - <b><u>12</b></u>)</div>
+	<input type="text" id='numberTwo' class='inputBoxes'>
+
+	<div id='runButton' onclick='getFactors()'>Factor</div>
+
+	<div id='resultsDiv1' class="outputDiv"></div>
+	<div id='resultsDiv2' class="outputDiv"></div>
+
+	<div id="multiplicationResults" class="outputDiv"></div>
+    <div id='arrayOutputDiv' class='outputDiv'></div>
+
+    <div id='instDiv' class="instClass"></div>
+    <div id='overDiv' class="instClass">
+
+        Fairly straight forward, insert the value of the coefficient of x^2 into the first box and the value of the constant into the second box.
+        After you've entered two valid integers, click "Factor." The factors for the entered values appear below the input boxes and all of the
+        potential equations will display in the right-most display box. These results are all of the possible formatulations based on the factors 
+        of the input values. Scroll through the list to find the middle-constant value you're looking for. 
+        </br></br>
+        Two notes: </br></br>1) Only enter positive integers into the input boxes. There will be a handful of variations of the value you're looking for in 
+        the results, find the one with the correct signs. If a value in the trinomial equation is represented as 'x^2' or just 'x,' input a 1 for that value.
+        </br></br>
+        2) For lack of coding, you'll notice that all of the calculated formulations have positive operators. Negative values are expressed as (a + -b).
+        </br></br>
+        Please share what you think, if you find any blunders, etc. 
+       
+
+    </div>
+    <div id='xDiv'  class="instClass" onclick='closeInst()'>X</div>
+
+    <div id='instButton' onclick='dispInst()'>Instructions</div>
+
+</body>
+</html>
