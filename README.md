@@ -1,7 +1,8 @@
 Trinomial_Calculator
 ====================
 
-Client-side Trinomial calculator. Enter the first coefficient and the constant of a trinomial equation to determine it's binomial equivalent
+Client-side Trinomial calculator. All calculations are performed using JavaScript. A little jQuery is tossed in
+for effect.
 
 Simple calculator I created to speed factoring trinomials into their binomial equivalents. 
 
